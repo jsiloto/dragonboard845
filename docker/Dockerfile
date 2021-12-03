@@ -15,7 +15,7 @@ RUN : \
 RUN python3.8 -m venv /venv
 ENV PATH=/venv/bin:$PATH
 
-RUN apt-get update && apt-get install -y dirmngr gpg curl git rsync libncurses5
+RUN apt-get update && apt-get install -y dirmngr gpg curl git rsync libncurses5 zip unzip
 
 RUN git config --global user.email "you@example.com" &&  git config --global user.name "Your Name"
 
